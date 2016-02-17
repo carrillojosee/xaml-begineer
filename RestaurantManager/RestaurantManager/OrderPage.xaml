@@ -7,8 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+
     <Grid Background="Black">
-        
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="*"/>
@@ -23,10 +24,22 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <AppBar Grid.Row="0" Grid.ColumnSpan="3">
+            <AppBarButton x:Name="Home" Icon="Home" Label="Home" Width="140" Height="80" Click="HomeButton_Click" HorizontalAlignment="Left"/>
+        </AppBar>
+        
         <TextBlock  Grid.Row="1" Grid.Column="1" Text="Special Request:"  HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White"/>
         <TextBlock  Grid.Row="1" Grid.Column="2" Text="Order Items:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White"/>
+
+        <ListView Grid.Row="2" Grid.Column="0" Background="AntiqueWhite">
+
+        </ListView>
+        <Button  Grid.Row="4" Grid.Column="0" Content="Add to Order" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Background="#FF707070" BorderBrush="#FF707070"/>
         
-        <TextBlock  Grid.Row="4" Grid.Column="0" Text="**Add to Order**" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
-        <TextBlock  Grid.Row="4" Grid.Column="1" Text="**Submit Order**" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Foreground="White"/>
+        <ListView Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"  Background="Blue" >
+
+        </ListView>
+        <Button  Grid.Row="4" Grid.Column="1" Content="Submit Order" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Foreground="White" Background="#FF707070" BorderBrush="#FF707070"/>
     </Grid>
 </Page>
+
