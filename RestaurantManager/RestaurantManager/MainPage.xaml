@@ -20,10 +20,10 @@
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Restaurant Manager" HorizontalAlignment="Center" 
-                   VerticalAlignment="Bottom" Foreground="White" />
+                   VerticalAlignment="Bottom" />
         <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="Internal Test Version" HorizontalAlignment="Center" 
-                   VerticalAlignment="Bottom" FontSize="20" Foreground="White" />
-        <Button Grid.Row="2" Grid.Column="0" Content="Go to Orders View" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Click="OrderPage_Click" BorderBrush="Gray" Background="Gray"/>
-        <Button Grid.Row="2" Grid.Column="1" Content="Submit Order" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Click="ExpeditePage_Click" BorderBrush="Gray" Background="Gray"/>
+                   VerticalAlignment="Bottom" FontSize="20" />
+        <Button Grid.Row="2" Grid.Column="0" Content="Go to Orders View" Click="OrderPage_Click" />
+        <Button Grid.Row="2" Grid.Column="1" Content="Submit Order" Click="ExpeditePage_Click" />
     </Grid>
 </Page>
